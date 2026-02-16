@@ -1,0 +1,137 @@
+🧠 PROJECT TITLE
+
+AI-based College Waste & Energy Monitoring System (Dashboard Website)
+
+🎯 PROJECT OBJECTIVE
+
+Build a full stack web application for monitoring college energy consumption and waste management using dummy/simulated data.
+The system should be scalable, so that real IoT data can be integrated later without changing the UI.
+
+🛠️ TECH STACK REQUIREMENTS
+Frontend
+
+React.js (Vite or CRA)
+
+Tailwind CSS or Bootstrap
+
+Chart.js / Recharts
+
+React Router
+
+Backend
+
+Node.js
+
+Express.js
+
+REST APIs
+
+Dummy data (no real sensors)
+
+Database (Optional for Phase 1)
+
+MongoDB (schema ready but data can be static)
+
+🌐 WEBSITE MODULES & FEATURES
+1️⃣ Authentication (UI-based)
+
+Login Page (Admin / Viewer role – dummy auth)
+
+Protected dashboard routes
+
+2️⃣ Dashboard Overview
+
+Show the following using cards + charts:
+
+Total energy usage today (kWh)
+
+Total waste generated today (kg)
+
+Alerts count
+
+Sustainability score (%)
+
+Charts:
+
+Line chart → Energy trend
+
+Pie chart → Waste distribution
+
+3️⃣ Energy Monitoring Module
+
+Department/Block-wise energy usage:
+
+CSE
+
+Hostel
+
+Library
+
+Labs
+
+Bar chart + table
+
+Dummy alert:
+
+“High energy usage detected in Hostel Block”
+
+4️⃣ Waste Monitoring Module
+
+Waste categories:
+
+Organic
+
+Recyclable
+
+Non-recyclable
+
+Pie chart visualization
+
+Daily waste log table
+
+Overflow warning (dummy logic)
+
+5️⃣ AI Prediction Module (Simulated)
+
+Predict next day energy usage using:
+
+Average of previous days
+
+Display prediction text:
+
+“Expected energy usage tomorrow: 1020 kWh”
+
+Show smart suggestions (static AI logic)
+
+6️⃣ Reports Module
+
+Date-wise data view
+
+Download report button (UI only)
+
+Summary analytics section
+
+🧩 BACKEND REQUIREMENTS (Node + Express)
+
+Create REST APIs with dummy data:
+
+Energy API
+GET /api/energy
+POST /api/energy
+
+Waste API
+GET /api/waste
+POST /api/waste
+
+Dashboard API
+GET /api/dashboard/summary
+
+Dummy Data Example
+{
+  "date": "2026-02-13",
+  "block": "CSE",
+  "energy": 420,
+  "organic": 35,
+  "recyclable": 20,
+  "non_recyclable": 15
+}
