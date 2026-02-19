@@ -1,9 +1,19 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-
+// import cors from "cors";
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+
+
+
+// app.use(cors({
+//   origin: "https://eco-track-beta-nine.vercel.app/",   // abhi testing ke liye
+//   methods: ["GET", "POST", "PUT", "DELETE"]
+// }));
+
+
 
 // Middleware
 app.use(cors());
